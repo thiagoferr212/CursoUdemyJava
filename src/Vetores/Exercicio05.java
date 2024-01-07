@@ -24,7 +24,7 @@ public class Exercicio05 {
                 posicao = i;
             }
         }
-        System.out.printf("MAior Valor: %.1f%n", maior);
+        System.out.printf("Maior Valor: %.1f%n", maior);
         System.out.print("Posição do Maior Valor: " + posicao);
 
         sc.close();
