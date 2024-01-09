@@ -22,6 +22,8 @@ public class Loja{
         System.out.print("Informe a quantidade para retirar do estoque: ");
         prod.RemoveProduto(sc.nextInt());
         System.out.printf("%nDados do produto: %nnome: %s %nvalor: $%.2f %nquantidade: %d %nTotal: $%.2f%n%n", prod.nome, prod.preco, prod.quantidade, prod.ValorTotal());
+        // Utilizando o objeto toString
+        System.out.println(prod.toString());
 
         sc.close();
     }
