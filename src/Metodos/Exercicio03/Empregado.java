@@ -10,14 +10,14 @@ public class Empregado {
         return salarioBruto - imposto;
     }
 
-    public void IncluirSal(double salarioBruto){
-        this.salarioBruto *= (salarioBruto/100);
+    public void IncluirSal(double porcentagem){
+        salarioBruto += salarioBruto * porcentagem / 100;
     }
 
     public String toString(){
         return nome
         + ", $"
-        + SalarioLiquido();
+        + String.format("%.2f",SalarioLiquido());
     }
     
 }
